@@ -17,4 +17,5 @@
 
 `npm run start startPoint endPoint `
 
-startPoint - початкова точка, число
+startPoint - початкова точка, число, розрахунок починається з 0
+endPoint - кінцева точка, число

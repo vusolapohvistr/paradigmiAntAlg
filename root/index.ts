@@ -58,7 +58,6 @@ class Ant implements AntInterface {
             }
             if (balanceSum === 0) {
                 this.cantFindWay = true;
-                console.log('cant find way');
                 break;
             }
 
@@ -150,5 +149,5 @@ createWeightTableFromFile('matrix.txt').then(weightMatrix => {
     for (let i = 0; i < answer.length - 1; i++) {
         wayWeight += weightMatrix[answer[i]][answer[i + 1]];
     }
-    console.log(answer, wayWeight);
+    console.log('Way:', answer, 'Length:', wayWeight);
 });
