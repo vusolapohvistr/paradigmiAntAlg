@@ -5,8 +5,8 @@ const alfa = 0.4;
 const beta = 0.6;
 const antCapacity = 100;
 const ro = 0.05;
-const numberOfAnts = 300;
-const numberOfIterations = 10;
+const numberOfAnts = 50;
+const numberOfIterations = 3;
 
 let start = 0;
 let end = 0;
@@ -34,11 +34,6 @@ class Ant implements AntInterface {
     path: Array<number> = [];
     totalWay = 0;
     cantFindWay = false;
-    constructor() {
-        this.path = [];
-        this.totalWay = 0;
-        this.cantFindWay = false;
-    }
 
     go(
         startPoint: number,
