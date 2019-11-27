@@ -6,7 +6,7 @@ const beta = 0.6;
 const antCapacity = 100;
 const ro = 0.05;
 const numberOfAnts = 300;
-const numberOfIterations = 100;
+const numberOfIterations = 10;
 
 let start = 0;
 let end = 0;
@@ -144,10 +144,12 @@ async function createWeightTableFromFile(fileName: string): Promise<Array<Array<
 }
 
 createWeightTableFromFile('matrix.txt').then(weightMatrix => {
+    const startTime = Date.now();
     const answer: Array<number> = antsAlg(weightMatrix);
+    const syncTime = Date.now() - startTime;
     let wayWeight = 0;
     for (let i = 0; i < answer.length - 1; i++) {
         wayWeight += weightMatrix[answer[i]][answer[i + 1]];
     }
-    console.log('Way:', answer, 'Length:', wayWeight);
+    console.log('Way:', answer, 'Length:', wayWeight, 'Took ms:', syncTime);
 });

@@ -150,7 +150,7 @@
         "signature": "2e29c91abb0c3a575ff79670fa315b6c09ac7a57a7b42aa509fa17f0a224968f"
       },
       "./root/index.ts": {
-        "version": "e1e3cc28f0636056027f543985c369d640510feae5e35469eb317aa6560f8a63",
+        "version": "cd391812f5ca398884a3d3c676f3ec71c6753fdda402afb3e6661394e2f57955",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6"
       },
       "./node_modules/@types/eslint-visitor-keys/index.d.ts": {
